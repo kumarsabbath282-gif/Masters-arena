@@ -131,45 +131,20 @@ footer {
 
   </style>
 </head>
-<body><header>
-  <h1>🔥 Masters Arena 🔥</h1>
-  <p>Free Fire Paid Tournament • ₹5 Entry • Only 30 Slots</p>
-  <a href="#register"><button class="cta-btn">Join the Battle</button></a>
-</header><section id="register">
-  <div class="card">
-    <h2>Safe Tournament Registration</h2>
-    <p>Register first. Payment will be requested only if you are selected.</p><a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank">
-  <button class="register-btn">Register Now</button>
-</a>
-
-<div class="rules">
-  <ul>
-    <li>Only first 30 valid registrations are selected</li>
-    <li>Selected players receive UPI payment link via WhatsApp</li>
-    <li>Entry Fee: ₹5</li>
-    <li>Room ID & password shared before match</li>
-    <li>No refunds after room details are shared</li>
-  </ul>
-</div>
-
-  </div>
-</section><section id="payment">
-  <div class="card">
-    <h2>💳 Payment Section</h2>
-    <p>This payment step is for <b>SELECTED players only</b> (first 30 registrations).</p>
-    <p>If you received confirmation on WhatsApp, complete the payment below.</p><div style="margin-top:20px;">
-  <p><b>Entry Fee:</b> ₹5</p>
-  <p><b>UPI ID:</b> yourupi@bank</p>
-</div>
-
-<a href="upi://pay?pa=yourupi@bank&pn=MastersArena&am=5&cu=INR" target="_blank">
-  <button class="register-btn">Pay ₹5 Now</button>
-</a>
-
-<p class="note">After payment, send screenshot on WhatsApp for confirmation.</p>
-
-  </div>
-</section><footer>
-  © 2025 Masters Arena • Fair Play • Gaming Community
-</footer></body>
-  </html>
+<body><section id="registration" class="section">
+  <h1>Masters Arena – Free Fire Tournament</h1>
+  <p>Entry Fee: ₹5 | Only 30 Players</p>
+  <a class="register-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank">Register Now</a>
+</section><section id="payment" class="section">
+  <h2>Payment Section</h2>
+  <p>Pay only if you are selected (First 30 players)</p>
+  <p><strong>Entry Fee:</strong> ₹5</p>
+  <p><strong>UPI ID:</strong> mastersarena@paytm</p>
+  <button class="register-btn" onclick="payNow()">Pay ₹5 Now</button>
+  <p class="note">After payment, send screenshot on WhatsApp.</p>
+</section><script>
+function payNow() {
+  window.location.href = "upi://pay?pa=mastersarena@paytm&pn=MastersArena&am=5&cu=INR";
+}
+</script></body>
+</html>
