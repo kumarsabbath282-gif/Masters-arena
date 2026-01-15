@@ -122,6 +122,14 @@ footer {
   color: #777;
   font-size: 14px;
 }
+#ss{
+    color: white;
+    text-decoration: none;
+    background: #ff0033;
+    padding: 10px 5px;
+    border-radius: 2em;
+}
+    
 
 @media (max-width: 600px) {
   header h1 { font-size: 30px; }
@@ -141,7 +149,8 @@ footer {
   <p><strong>Entry Fee:</strong> ₹5</p>
   <p><strong>UPI ID:</strong> mastersarena@paytm</p>
   <button class="register-btn" onclick="payNow()">Pay ₹5 Now</button>
-  <p class="note">After payment, send screenshot on WhatsApp.</p>
+  <p class="note">After payment, send screenshot on this button below.</p>
+  <a href="" id="ss">send screenshot</a>
 </section><script>
 function payNow() {
   window.location.href = "upi://pay?pa=7094021400@pthdfc&pn=MastersArena&am=5&cu=INR";
